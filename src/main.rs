@@ -20,7 +20,7 @@ pub enum Token {
 
 pub fn tokenize(input: String) -> Vec<Token> {
     let mut tokens: Vec<Token> = Vec::new();
-    let mut chars = input.chars().peekable(); // Allows peeking at the next character
+    let mut chars = input.chars().peekable();
 
     while let Some(c) = chars.next() {
         match c {
